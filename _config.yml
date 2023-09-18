@@ -1,0 +1,206 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole site, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+# 
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# ***********
+# if the below is false then the Student Progress and Attendance Tabs will be disapper
+
+# Website Configuration
+
+site_mode_isOffline: &my_anchor false #set true if site is no more getting data from google sheets and also download sheet individually into csv format and place into csv_files files  names should be same as now these are
+
+
+# Links
+
+url: 'https://fall2023-se101b.ubs.dev' # the base hostname & protocol for your site, e.g. http://example.com
+# this below is the link on Details=>Outlines=> Theory
+details_outline_theory_url : 'https://drive.google.com/file/d/1HAn039eGEPUzUmWhwldQe3EhgiuMEK2R/view?usp=drive_link'
+# this below is the link on Details=>Outlines=> Lab
+details_outline_lab_url : '#'
+# **********************************
+# *************** Links *******************
+# this below is sheet that cointains attendance and weekly data
+
+# chagning for progress sheet
+courseDetails_sheet_url : 'https://script.google.com/macros/s/AKfycbyyo6gW7OaxlmyFpheyd6i3JcwwsVTR0cnDwzLLnugvRm5NtwLsKc6slDRgycDY2TfJ/exec'
+
+# this below is the link on Schedule Page Book UBS Appointment
+book_ubs_appointment_url : '#'
+# this below is the link on Schedule Page Book TA Appointment
+book_ta_appointment_url : '#'
+# this below is the link on Details=>Tools=> Guide For Tools
+guide_for_tools_url : 'https://drive.google.com/file/d/11tL5zHQRgkl4U6s6vNFZUbpskenXwwS7/view?usp=drive_link'
+# this below is the link on Details=>Outlines=> Lab
+reading_material_for_github_url : 'https://drive.google.com/file/d/1s7eukbKvpE0JD-C5cIs5UuX2_itoz6N4/view?usp=drive_link'
+
+
+# Static Data
+title: Programming Fundamentals SE-B
+tagline: Fall 2023 - SE101B - CFP
+description: This introductory course is aimed at the students with little or no programming experience, and it introduces students to the basics of computers and programming. On one hand they will learn basic topics of computing and usage, while on the other hand they will be exposed to programming language(s). By the end of course the student should be capable of programming in at least one programming language.
+author: Usama Bin Shakeel
+# **********************************
+# description of Details=>Parts
+parts_description: All programming courses will have two parts (Theory & Lab), these both are graded and evaluated separately, therefore performance in both is required. Breakdown of the percentage for each part of the course is as following
+# description of Details=>Outlines
+outlines_description: Both course outlines are tentative, and can be modified based on the students learning capabilities and response based on progress.
+
+# google sheets tab names
+announcemet_and_calender_sheet_tab: website_weekly_data
+attendance_and_std_progress_sheet_tab: website_attendance
+fame_weekly_top_sheet_tab: website_top_std_of_week
+fame_overall_top_sheet_tab: website_overall_top_std
+staff_sheet_tab: website_staff
+std_progress_sheet: StudentProgressChart
+
+# scv file names
+# these names should be same as in csv files filder 
+# DON'T INCLUDE .CSV EXTENSION
+staff_csv: staff
+overall_top_std_csv: overall_top_std
+top_std_of_week_csv: top_std_week
+announcement_and_calender_csv: weekly_data
+
+
+# This will show on Schedule
+scheduleData:
+  timeline:
+    - '8:00 AM'
+    - '8:30 AM'
+    - '9:00 AM'
+    - '9:30 AM'
+    - '10:00 AM'
+    - '10:30 AM'
+    - '11:00 AM'
+    - '11:30 AM'
+    - '12:00 PM'
+    - '12:30 PM'
+    - '1:00 PM'
+    - '1:30 PM'
+    - '2:00 PM'
+    - '2:30 PM'
+    - '3:00 PM'
+    - '3:30 PM'
+    - '4:00 PM'
+    - '4:30 PM'
+    - '5:00 PM'
+    - '5:30 PM'
+  schedule:
+    - name: Monday
+      events:
+        - name: Lecture
+          start: 9:30 AM
+          end: 11:00 AM
+          location: Auditorium
+        - name: Lab
+          start: 11:00 AM
+          end: 02:00 PM
+          location: Computer Lab Level 6
+    - name: Tuesday
+      events:
+        - name: Lecture
+          start: 9:30 AM
+          end: 11:00 AM
+          location: Auditorium
+        - name: TA Appointment Slots
+          start: 11:00 AM
+          end: 12:30 PM
+          location: Embedded Lab
+        - name: UBS Appointment Slots
+          start: 12:30 PM
+          end: 2:00 PM
+          location: Embedded Lab
+
+    - name: Wednesday
+      events:
+    - name: Thursday
+      events:
+    - name: Friday
+      events:
+
+
+
+
+# Generic Configurations
+
+baseurl: '/' # the subpath of your site, e.g. /blog
+
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+logo: "/assets/images/ubs-itu.png"
+exclude: [vendor]
+# Theme settings
+remote_theme: pmarsceill/just-the-docs@v0.3.3
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+permalink: pretty
+aux_links:
+  Usama Bin Shakeel:
+    - 'https://ubs.dev'
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: "page"
+      nav_order: 5
+      nav_exclude: *my_anchor
+      author: "UBS"
+
+  - scope:
+      path: ''
+      type: staffers
+    values:
+      layout: staffer
+      subpath: '/assets/images/staff/'
+  - scope:
+      path: ''
+      type: students
+    values:
+      layout: staffer
+      subpath: '/assets/images/students/'
+  - scope:
+      path: ''
+      type: modules
+    values:
+      layout: module
+  - scope:
+      path: ''
+      type: announcements
+    values:
+      layout: announcement
+
+footer_content:
+# Collections for website data
+collections:
+  staffers:
+  modules:
+  announcements:
+  students:
+# Default layouts for each collection type
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+plugins:
+  - jekyll-seo-tag
+
+theme: jekyll-theme-cayman
+
