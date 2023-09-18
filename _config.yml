@@ -107,11 +107,11 @@ scheduleData:
         - name: TA Appointment Slots
           start: 11:00 AM
           end: 12:30 PM
-          location: Embedded Lab
+          location: Computer Lab Level 6
         - name: UBS Appointment Slots
           start: 12:30 PM
           end: 2:00 PM
-          location: Embedded Lab
+          location: Computer Lab Level 6
     - name: Tuesday
       events:
         - name: Lecture
