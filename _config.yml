@@ -104,16 +104,6 @@ scheduleData:
           start: 9:30 AM
           end: 11:00 AM
           location: Auditorium
-        - name: Lab
-          start: 11:00 AM
-          end: 02:00 PM
-          location: Computer Lab Level 6
-    - name: Tuesday
-      events:
-        - name: Lecture
-          start: 9:30 AM
-          end: 11:00 AM
-          location: Auditorium
         - name: TA Appointment Slots
           start: 11:00 AM
           end: 12:30 PM
@@ -122,6 +112,16 @@ scheduleData:
           start: 12:30 PM
           end: 2:00 PM
           location: Embedded Lab
+    - name: Tuesday
+      events:
+        - name: Lecture
+          start: 9:30 AM
+          end: 11:00 AM
+          location: Auditorium
+        - name: Lab
+          start: 11:00 AM
+          end: 02:00 PM
+          location: Embedded Lab Level 6
 
     - name: Wednesday
       events:
