@@ -5,6 +5,7 @@ nav_order: 3
 description: The weekly event schedule.
 nav_exclude: false
 ---
+<link rel="stylesheet" href="/assets/css/style.css">
 
 # Weekly Schedule
 {% assign start_time = site.scheduleData.timeline | first %}
@@ -42,24 +43,12 @@ nav_exclude: false
   </ul>
 </div>
 
+<a href="" class="btn btn-outline h6" id="ubs_appointment_url" >Book UBS Appointment</a>
+<a href="" class="btn btn-outline h6" id="ta_appointment_url">Book TA Appointment</a>
 
-[Book UBS Appointment]({{ site.book_ubs_appointment_url }}){: .btn .btn-outline .h6}
-[Book TA Appointment]({{ site.book_ta_appointment_url }}){: .btn .btn-outline .h6}
+<div id="loader"></div>
 
-
-<!-- ---
-layout: page
-title: Schedule
-nav_order: 3
-description: The weekly event schedule.
----
-
-# Weekly Schedule
-
-{% for schedule in site.schedules %}
-{{ schedule }}
-{% endfor %}
-
-
-[Book UBS Appointment]({{site.book_ubs_appointment_url}}){: .btn .btn-outline .h6}
-[Book TA Appointment]({{site.book_ta_appointment_url}}){: .btn .btn-outline .h6} -->
+<script src="/assets/js/library.js"></script>
+<script>
+    library.staticData("{{site.courseDetails_sheet_url}}", "{{site.courseDetails}}","general_site_details", "scheduleView" ,{{site.site_mode_isOffline}}, "{{site.general_data_csv}}");
+</script>

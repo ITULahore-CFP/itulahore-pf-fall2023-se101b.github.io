@@ -25,32 +25,16 @@ site_mode_isOffline: &my_anchor false #set true if site is no more getting data 
 # Links
 
 url: 'https://fall2023-se101b.ubs.dev' # the base hostname & protocol for your site, e.g. http://example.com
-# this below is the link on Details=>Outlines=> Theory
-details_outline_theory_url : 'https://drive.google.com/file/d/1HAn039eGEPUzUmWhwldQe3EhgiuMEK2R/view?usp=drive_link'
-# this below is the link on Details=>Outlines=> Lab
-details_outline_lab_url : '#'
-# **********************************
-# *************** Links *******************
-# this below is sheet that cointains attendance and weekly data
-
 # chagning for progress sheet
-courseDetails_sheet_url : 'https://script.google.com/macros/s/AKfycbyyo6gW7OaxlmyFpheyd6i3JcwwsVTR0cnDwzLLnugvRm5NtwLsKc6slDRgycDY2TfJ/exec'
-
-# this below is the link on Schedule Page Book UBS Appointment
-book_ubs_appointment_url : '#'
-# this below is the link on Schedule Page Book TA Appointment
-book_ta_appointment_url : '#'
-# this below is the link on Details=>Tools=> Guide For Tools
-guide_for_tools_url : 'https://drive.google.com/file/d/11tL5zHQRgkl4U6s6vNFZUbpskenXwwS7/view?usp=drive_link'
-# this below is the link on Details=>Outlines=> Lab
-reading_material_for_github_url : 'https://drive.google.com/file/d/1s7eukbKvpE0JD-C5cIs5UuX2_itoz6N4/view?usp=drive_link'
-
+courseDetails_sheet_url : 'https://script.google.com/macros/s/AKfycbwSTkMZtMR4rrqH7cp6CjUHViw_qgFfMJGvQC89jr61v8gbvKefJtxQf8Nec3IjifXA/exec'
 
 # Static Data
 title: Programming Fundamentals SE-B
-tagline: Fall 2023 - SE101B - CFP
+tagline: Fall 2023 - SE101 - PF
 description: This introductory course is aimed at the students with little or no programming experience, and it introduces students to the basics of computers and programming. On one hand they will learn basic topics of computing and usage, while on the other hand they will be exposed to programming language(s). By the end of course the student should be capable of programming in at least one programming language.
 author: Usama Bin Shakeel
+
+# Static Data
 # **********************************
 # description of Details=>Parts
 parts_description: All programming courses will have two parts (Theory & Lab), these both are graded and evaluated separately, therefore performance in both is required. Breakdown of the percentage for each part of the course is as following
@@ -58,20 +42,23 @@ parts_description: All programming courses will have two parts (Theory & Lab), t
 outlines_description: Both course outlines are tentative, and can be modified based on the students learning capabilities and response based on progress.
 
 # google sheets tab names
+courseDetails: CourseDetails
 announcemet_and_calender_sheet_tab: website_weekly_data
 attendance_and_std_progress_sheet_tab: website_attendance
 fame_weekly_top_sheet_tab: website_top_std_of_week
 fame_overall_top_sheet_tab: website_overall_top_std
 staff_sheet_tab: website_staff
 std_progress_sheet: StudentProgressChart
+std_details_sheet: Student Details
 
 # scv file names
-# these names should be same as in csv files filder 
+# these names should be same as in csv files filder
 # DON'T INCLUDE .CSV EXTENSION
 staff_csv: staff
-overall_top_std_csv: overall_top_std
-top_std_of_week_csv: top_std_week
-announcement_and_calender_csv: weekly_data
+general_data_csv: general_data
+overall_top_std_csv: website_overall_top_std
+top_std_of_week_csv: website_top_std_of_week
+announcement_and_calender_csv: website_weekly_data
 
 
 # This will show on Schedule

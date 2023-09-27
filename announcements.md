@@ -21,4 +21,3 @@ nav_exclude: false
 <script>
     library.announcements("{{site.courseDetails_sheet_url}}", "{{site.announcemet_and_calender_sheet_tab}}",{{site.site_mode_isOffline}}, "{{site.announcement_and_calender_csv}}");
 </script>
-

@@ -18,6 +18,5 @@ description: Listing of course modules and topics.
 </script> -->
 <script src="/assets/js/library.js"></script>
 <script>
-    // library.calender("{{site.courseDetails_sheet_url}}", "website_week_data",{{site.site_mode_isOffline}});
     library.calender("{{site.courseDetails_sheet_url}}", "{{site.announcemet_and_calender_sheet_tab}}",{{site.site_mode_isOffline}}, "{{site.announcement_and_calender_csv}}");
 </script>

@@ -22,5 +22,5 @@ nav_exclude: false
 
 <script src="/assets/js/library.js"></script>
 <script>
-    library.staff("{{site.courseDetails_sheet_url}}", "{{site.staff_sheet_tab}}",{{site.site_mode_isOffline}});
+    library.staff("{{site.courseDetails_sheet_url}}", "{{site.courseDetails}}","staff",{{site.site_mode_isOffline}},"{{site.staff_csv}}");
 </script>

@@ -6,21 +6,31 @@ seo:
   type: Course
   
 ---
+<link rel="stylesheet" href="/assets/css/style.css">
 <script>
   document.title = "{{ site.title }}"
 </script>
 
-# {{ site.tagline }}
-{: .mb-2 }
+<h1 class="mb-2" id="tagLine"></h1>
 
-[//]: # ({{ site.description }})
-{: .fs-6 .fw-300 }
 
+<!-- Announcements -->
 {% if site.announcements %}
-{{ site.announcements.last }}
-[Announcements](announcements.md){: .btn .btn-outline .fs-3 }
+  <div class="fs-3" id="ann-btn">
+    {{ site.announcements.last }}
+    <a href="announcements/" class="btn btn-outline">Announcements</a>
+  </div>
 {% endif %}
 
-## {{ site.title }}
+<!-- Site Title -->
+<h2 id="title"></h2>
 
-{{ site.description }}
+<!-- Site Description -->
+<p id="description"></p>
+
+<div id="loader"></div>
+
+<script src="/assets/js/library.js"></script>
+<script>
+    library.staticData("{{site.courseDetails_sheet_url}}", "{{site.courseDetails}}","general_site_details", "indexView" ,{{site.site_mode_isOffline}}, "{{site.general_data_csv}}");
+</script>

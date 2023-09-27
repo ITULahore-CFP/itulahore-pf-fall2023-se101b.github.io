@@ -11,21 +11,6 @@ description: Listing of course modules and topics.
 </div>
 <p>Select options to add on chart.</p>
 <div id="options" class="d-flex mt-2">
-    <div class="mr-4">
-        <input type="checkbox" id="quiz1" name="Quiz 1"> <label for="quiz1">Quiz 1</label>
-    </div>
-    <div class="mr-4">
-        <input type="checkbox" id="quiz2" name="Quiz 2"> <label for="quiz2">Quiz 2</label>
-    </div>
-    <div class="mr-4">
-        <input type="checkbox" id="assignment" name="Assignment"> <label for="assignment">Assignment</label>
-    </div>
-    <div class="mr-4">
-        <input type="checkbox" id="labA" name="Lab A"> <label for="labA">Lab A</label>
-    </div>
-    <div class="mr-4">
-        <input type="checkbox" id="labB" name="Lab B"> <label for="labB">Lab B</label>
-    </div>
 </div>
 <div class="mt-4">
     <button id="requestRecordButton" class="btn btn-outline h6" 
